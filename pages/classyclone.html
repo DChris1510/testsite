@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>
+          Classy Clone
+        </title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"/>
+
+    <link rel="stylesheet" type="text/css" href="classyclonestyle.css" />
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+    rel="stylesheet"
+  />
+
+  <body>
+    <div class="title">Classy</div>
+    <div class="fb-btn-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="fb-btn-logo"></div>
+      <div class="card cd-size">
+        <div class="card-body">
+          <div>
+            <div class="text-center">Log in</div>
+            <div class="fb-btn-logo"><img src=""></img></div>
+            <div class="cd-center-text">
+              <button type="submit" class="btn btn-primary cd-btn-size cd-fb-btn-clr">
+                Continue with Facebook
+              </button>
+              <small id="emailHelp" class="form-text text-muted">
+                or use your email
+                </small>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email <span>*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="cd-pw cd-pw-field">
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="cd-pw-box"> Password <span>*</span>
+                  <input type="password" class="form-control" id="exampleInputPassword1" />
+                </div>
+              <div>
+                      <label input class="form-control cd-pw-show">
+                      <input type="checkbox" onclick="showpw()" />Show</label>
+              </div>
+            </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                  <label class="form-check-label" for="exampleCheck1">
+                    Remember me
+                  </label>
+                    <div class="forgot-pw"><a href="">forgot password</a></div>
+                </div>
+              <div class="cd-center-text">
+                <button type="submit" class="btn btn-primary cd-btn-size cd-login-btn-clr">LOG IN</button>
+              </form>
+              </div>
+              <div class="cd-create-acc"><a href="">
+                Create an account
+              </a>
+              </div>
+              <div class="cd-pwd-by-classy">
+                Powered by Classy
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <div class= "cd-footer">
+      Copyright ©2019 • All rights reserved • Privacy Policy • Terms of Use
+      </div>
+    <script>
+      function showpw() {
+        var x = document.getElementById("exampleInputPassword1");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+      </script>
+  </body>
+</html>
